@@ -11,7 +11,7 @@
 
 class Message {
 public:
-    explicit Message(std::string se, std::string re, std::string te, bool r = false) : sender(se),
+    explicit Message(const std::string &se, const std::string &re, const std::string &te, bool r = false) : sender(se),
                                                                            receiver(re), text(te), read(r){
     }
 
