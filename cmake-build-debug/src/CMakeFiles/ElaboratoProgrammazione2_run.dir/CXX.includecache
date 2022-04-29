@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/Chat.cpp
+Chat.h
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/Chat.h
+
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/Chat.h
 Subject.h
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/Subject.h
@@ -19,6 +23,10 @@ vector
 -
 memory
 -
+
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/IconBadgeMonitor.cpp
+IconBadgeMonitor.h
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/IconBadgeMonitor.h
 
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/src/IconBadgeMonitor.h
 Observer.h
