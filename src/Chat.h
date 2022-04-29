@@ -12,7 +12,7 @@
 #include <vector>
 #include <memory>
 
-class Chat : public Subject {
+class Chat : public Subject{
 public:
 
     Chat(const std::string &se, const std::string &re);
