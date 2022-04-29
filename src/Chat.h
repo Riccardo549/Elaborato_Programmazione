@@ -14,12 +14,12 @@
 
 class Chat : public Subject {
 public:
-    Chat() = default;
-    explicit Chat(std::string se, std::string re);
 
-    ~Chat();
+    Chat(std::string se, std::string re);
 
-    void addMessage(const std::shared_ptr<Message> newMsg);
+    virtual ~Chat();
+
+    void addMessage(std::shared_ptr<Message> newMsg);
 
     const std::shared_ptr<Message> &lastMessage() const;
 

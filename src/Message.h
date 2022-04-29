@@ -27,16 +27,8 @@ public:
         return sender;
     }
 
-    void setSender(const std::string &sender) {
-        Message::sender = sender;
-    }
-
     const std::string &getReceiver() const {
         return receiver;
-    }
-
-    void setReceiver(const std::string &receiver) {
-        Message::receiver = receiver;
     }
 
     const std::string &getText() const {
@@ -46,6 +38,16 @@ public:
     void setText(const std::string &text) {
         Message::text = text;
     }
+
+    void setSender(const std::string &sender) {
+        Message::sender = sender;
+    }
+
+    void setReceiver(const std::string &receiver) {
+        Message::receiver = receiver;
+    }
+
+
 
 private:
     bool read;

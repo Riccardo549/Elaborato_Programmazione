@@ -27,7 +27,7 @@ TEST (Chat, Chat_Func_Test) {
     ASSERT_NE(ch->getTextByPosition(1), "Tutto bene, te?");
     ASSERT_EQ(ch->getTextByPosition(1), "Potrebbe andare meglio.");
 }
-
+//test posizione non presente
 TEST (Chat, Chat_Ecx_Test) {
     ASSERT_THROW(ch->addMessage(std::make_shared<Message>(Message("Benedetta", "Annalisa", "Come va?"))), std::runtime_error);
     ASSERT_THROW(ch->setReadByPosition(5), std::out_of_range);

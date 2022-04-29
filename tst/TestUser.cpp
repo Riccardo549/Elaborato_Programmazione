@@ -30,7 +30,7 @@ TEST(User, User_ReadText_Test) {
     ASSERT_NO_THROW(a->setTextByPosition(b, 3, "Ti faccio sapere al più presto"));
     ASSERT_EQ(b->getTextByPosition(b, 3), "Ti faccio sapere al più presto");
 }
-
+//test chat non presente
 TEST(User, User_Exc_Test) {
     ASSERT_THROW(a->setTextByPosition(b, 7, "Ciao"), std::runtime_error);
     ASSERT_THROW(a->sendMessage(c, std::make_shared<Message>(Message(b->getName(), a->getName(), "Ciao come va?"))), std::runtime_error);

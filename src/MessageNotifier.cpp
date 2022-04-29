@@ -29,9 +29,6 @@ void MessageNotifier::draw(std::string x, std::string y) {
     std::cout << "Ultimo messaggio da parte di " << x << ": " << y << "...\n" << std::endl;
 }
 
-bool MessageNotifier::isActive() const {
-    return active;
-}
 
 void MessageNotifier::setActive(bool active) {
     MessageNotifier::active = active;

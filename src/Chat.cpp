@@ -13,7 +13,7 @@ Chat::~Chat() {
         unsubscribe(obs);
 }
 
-void Chat::addMessage(const std::shared_ptr<Message> newMsg) {
+void Chat::addMessage(std::shared_ptr<Message> newMsg) {
     if ((myName == newMsg->getReceiver() || myName == newMsg->getSender()) && (otherName == newMsg->getSender() || otherName == newMsg->getReceiver())) {
         messages.push_back(newMsg);
         if (myName == newMsg->getReceiver())

@@ -12,7 +12,7 @@
 
 class IconBadgeMonitor : public Observer {
 public:
-    IconBadgeMonitor(std::shared_ptr<Chat> sub);
+    explicit IconBadgeMonitor(std::shared_ptr<Chat> sub);
     virtual ~IconBadgeMonitor();
 
     void attach() override;

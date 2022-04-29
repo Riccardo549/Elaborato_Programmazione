@@ -1,3 +1,4 @@
+
 //
 // Created by Riccardo on 13/03/22.
 //
@@ -12,10 +13,7 @@
 
 class User {
 public:
-    User(std::string n, bool re = false) : name(n) {
-    }
-
-    ~User() {
+    explicit User(std::string n) : name(n) {
     }
 
     const std::string &getName() const {
