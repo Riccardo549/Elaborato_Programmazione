@@ -13,7 +13,7 @@
 
 class User {
 public:
-    explicit User(std::string n) : name(n) {
+    explicit User(const std::string &n) : name(n) {
     }
 
     const std::string &getName() const {

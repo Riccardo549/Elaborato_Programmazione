@@ -4,7 +4,7 @@
 
 #include "Chat.h"
 
-Chat::Chat(std::string se, std::string re) : myName(se), otherName(re) {
+Chat::Chat(const std::string &se, const std::string &re) : myName(se), otherName(re) {
 
 }
 
