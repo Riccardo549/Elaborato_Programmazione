@@ -15,7 +15,7 @@
 class Chat : public Subject{
 public:
 
-    Chat(const std::string &se, const std::string &re);
+    Chat(std::string &se, const std::string &re);
 
     virtual ~Chat();
 
