@@ -7,6 +7,8 @@
 
 class TestUser : public :: testing::Test{
 public:
+    TestUser(){}
+
     std::shared_ptr<User> a;
     std::shared_ptr<User> b;
     std::shared_ptr<User> c;
