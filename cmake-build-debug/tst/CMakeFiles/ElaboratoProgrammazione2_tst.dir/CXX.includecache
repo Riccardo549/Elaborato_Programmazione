@@ -340,19 +340,9 @@ Observer.h
 memory
 -
 
-../src/User.h
-list
--
-iostream
--
-memory
--
-Chat.h
-../src/Chat.h
-
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/TestUser.cpp
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/TestChat.cpp
 gtest/gtest.h
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/gtest/gtest.h
-User.h
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/User.h
+Chat.h
+/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/Chat.h
 
