@@ -39,6 +39,16 @@ public:
         Message::text = text;
     }
 
+    void setSender(const std::string &sender) {
+        Message::sender = sender;
+    }
+
+    void setReceiver(const std::string &receiver) {
+        Message::receiver = receiver;
+    }
+
+
+
 private:
     bool read;
     std::string sender;
