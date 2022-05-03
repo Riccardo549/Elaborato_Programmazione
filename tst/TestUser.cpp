@@ -9,6 +9,11 @@ class TestUser : public :: testing::Test{
 public:
     TestUser(){}
 
+    virtual void setUp(){
+        a = std::make_shared<User>(User("Francesco"));
+        b = std::make_shared<User>(User("Benedetta"));
+        c = std::make_shared<User>(User("Benedetta"));
+    }
     std::shared_ptr<User> a;
     std::shared_ptr<User> b;
     std::shared_ptr<User> c;
