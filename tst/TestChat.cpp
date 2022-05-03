@@ -8,7 +8,7 @@
 class TestChat : public::testing::Test{
 public:
     TestChat(){}
-    virtual void SetUp(){
+    virtual void SetUp()  {
         ch = std::make_shared<Chat>(Chat("Francesco","Annalisa"));
     }
     std::shared_ptr<Chat> ch;

@@ -19,8 +19,6 @@ public:
     std::shared_ptr<User> a;
     std::shared_ptr<User> b;
     std::shared_ptr<Message> m;
-
-
 };
 
 

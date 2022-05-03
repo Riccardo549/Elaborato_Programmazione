@@ -9,10 +9,10 @@ class TestUser : public :: testing::Test{
 public:
     TestUser(){}
 
-    virtual void setUp(){
+    virtual void SetUp(){
         a = std::make_shared<User>(User("Francesco"));
         b = std::make_shared<User>(User("Benedetta"));
-        c = std::make_shared<User>(User("Benedetta"));
+
     }
     std::shared_ptr<User> a;
     std::shared_ptr<User> b;
@@ -23,7 +23,6 @@ public:
 TEST_F(TestUser, User_GetterSetter_Test) {
     ASSERT_EQ(a->getName(), "Francesco");
     ASSERT_EQ(b->getName(), "Benedetta");
-    ASSERT_EQ(c->getName(), "Lorenzo");
 }
 
 TEST_F(TestUser, User_Func_Test) {
@@ -35,12 +34,6 @@ TEST_F(TestUser, User_Func_Test) {
     ASSERT_NO_THROW(a->sendMessage(b, std::make_shared<Message>(Message(b->getName(), a->getName(), "Sarò presente!"))));
 }
 
-TEST_F(TestUser, User_ReadText_Test) {
-    ASSERT_NO_THROW(a->setReadByPosition(b, 0));
-    ASSERT_NO_THROW(b->setReadByPosition(a, 1));
-    ASSERT_NO_THROW(a->setTextByPosition(b, 3, "Ti faccio sapere al più presto"));
-    ASSERT_EQ(b->getTextByPosition(b, 3), "Ti faccio sapere al più presto");
-}
 //test chat non presente
 TEST_F(TestUser, User_Exc_Test) {
     ASSERT_THROW(a->setTextByPosition(b, 7, "Ciao"), std::runtime_error);
