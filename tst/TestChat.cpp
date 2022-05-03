@@ -7,7 +7,7 @@
 
 class TestChat : public::testing::Test{
 public:
-    TestChat(){}
+
     virtual void SetUp()  {
         ch = std::make_shared<Chat>(Chat("Francesco","Annalisa"));
     }
@@ -25,13 +25,15 @@ TEST_F(TestChat, Chat_GetterSetter_Test) {
 }
 
 TEST_F(TestChat, Chat_Func_Test) {
+    ch->setMyName("Lorenzo");
+    ch->setOtherName("Benedetta");
+    ASSERT_NO_THROW(ch->addMessage(std::make_shared<Message>(Message("Benedetta", "Lorenzo", "Ciao come va?"))));
+    ASSERT_NO_THROW(ch->addMessage(std::make_shared<Message>(Message("Lorenzo", "Benedetta", "Tutto bene, te?"))));
+
     ASSERT_EQ(ch->getTextByPosition(0), "Ciao come va?");
     ASSERT_EQ(ch->getTextByPosition(1), "Tutto bene, te?");
 
-    ASSERT_NO_THROW(ch->setReadByPosition(0));
-    ASSERT_NO_THROW(ch->setTextByPosition(1, "Potrebbe andare meglio."));
-    ASSERT_NE(ch->getTextByPosition(1), "Tutto bene, te?");
-    ASSERT_EQ(ch->getTextByPosition(1), "Potrebbe andare meglio.");
+    ASSERT_NE(ch->getTextByPosition(0), "Tutto bene, te?");
 }
 //test posizione non presente
 TEST_F(TestChat, Chat_Ecx_Test) {
