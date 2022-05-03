@@ -8,12 +8,14 @@
 class TestChat : public::testing::Test{
 public:
     TestChat(){}
+    virtual void SetUp(){
+        ch = std::make_shared<Chat>(Chat("Francesco","Annalisa"));
+    }
     std::shared_ptr<Chat> ch;
 
 };
 
 TEST_F(TestChat, Chat_GetterSetter_Test) {
-    ch = std::make_shared<Chat>(Chat("Francesco","Annalisa"));
     ASSERT_EQ(ch->getMyName(), "Francesco");
     ASSERT_EQ(ch->getOtherName(), "Annalisa");
     ch->setMyName("Lorenzo");
