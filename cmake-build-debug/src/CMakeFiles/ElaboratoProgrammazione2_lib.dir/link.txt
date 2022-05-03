@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libElaboratoProgrammazione2_lib.a  CMakeFiles/ElaboratoProgrammazione2_lib.dir/Chat.cpp.o CMakeFiles/ElaboratoProgrammazione2_lib.dir/IconBadgeMonitor.cpp.o CMakeFiles/ElaboratoProgrammazione2_lib.dir/MessageNotifier.cpp.o CMakeFiles/ElaboratoProgrammazione2_lib.dir/main.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libElaboratoProgrammazione2_lib.a
