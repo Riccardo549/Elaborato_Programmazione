@@ -350,23 +350,11 @@ memory
 Chat.h
 ../src/Chat.h
 
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/TestChat.cpp
-gtest/gtest.h
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/gtest/gtest.h
-Chat.h
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/Chat.h
-
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/TestMessage.cpp
 gtest/gtest.h
 -
 Message.h
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/Message.h
-User.h
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/User.h
-
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/TestUser.cpp
-gtest/gtest.h
-/Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/gtest/gtest.h
 User.h
 /Users/Riccardo/CLionProjects/ElaboratoProgrammazione2/tst/User.h
 
